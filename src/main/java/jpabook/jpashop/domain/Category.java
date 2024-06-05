@@ -11,12 +11,11 @@ import java.util.List;
 import static jakarta.persistence.FetchType.LAZY;
 
 @Entity
-@Getter
-@Setter
+@Getter @Setter
 public class Category {
 
     @Id
-    @Getter
+    @GeneratedValue
     @Column(name = "category_id")
     private Long id;
 
